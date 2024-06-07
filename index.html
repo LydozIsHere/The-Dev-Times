@@ -53,27 +53,16 @@
         }
         .story-grid {
             display: flex;
-            overflow-x: auto;
+            justify-content: space-between;
             gap: 1rem;
-        }
-        .story-grid::-webkit-scrollbar {
-            height: 8px;
-        }
-        .story-grid::-webkit-scrollbar-thumb {
-            background: #ccc;
-            border-radius: 8px;
-        }
-        .story-grid::-webkit-scrollbar-thumb:hover {
-            background: #bbb;
         }
         article {
             background-color: #fff;
             padding: 1rem;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            min-width: 250px;
+            width: calc(20% - 1rem);
             text-align: center;
-            flex: 0 0 auto;
             transition: transform 0.2s, box-shadow 0.2s;
         }
         article:hover {
