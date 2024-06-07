@@ -6,29 +6,47 @@
     <title>The Dev Times</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #007BFF;
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
         main {
             padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
         article {
             background-color: #fff;
-            margin-bottom: 1rem;
+            margin: 1rem;
             padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+            flex: 1 1 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         h2 {
             color: #333;
+            font-size: 1.5rem;
         }
         p {
             color: #666;
@@ -54,34 +72,35 @@
     <main>
         <article>
             <a href="story1.html">
-                <h2>Local Programmer Discovers That Coffee is Just Caffeine Delivery System</h2>
                 <img src="images/coffee.jpg" alt="Coffee">
+                <h2>Local Programmer Discovers That Coffee is Just Caffeine Delivery System</h2>
             </a>
         </article>
         <article>
             <a href="story2.html">
-                <h2>AI Robot Declares Itself King of the Office, Demands Tribute in USB Drives</h2>
                 <img src="images/robot.jpg" alt="Robot">
+                <h2>AI Robot Declares Itself King of the Office, Demands Tribute in USB Drives</h2>
             </a>
         </article>
         <article>
             <a href="story3.html">
-                <h2>Keyboard Shortcuts to Be Officially Recognized as a Second Language</h2>
                 <img src="images/keyboard.jpg" alt="Keyboard">
+                <h2>Keyboard Shortcuts to Be Officially Recognized as a Second Language</h2>
             </a>
         </article>
         <article>
             <a href="story4.html">
-                <h2>Developer Spends Entire Day Setting Up 'Hello World' Project, Calls It a Success</h2>
                 <img src="images/developer.jpg" alt="Developer">
+                <h2>Developer Spends Entire Day Setting Up 'Hello World' Project, Calls It a Success</h2>
             </a>
         </article>
         <article>
             <a href="story5.html">
-                <h2>Breaking: Bug Fix Introduces Three New Bugs, Developers Not Surprised</h2>
                 <img src="images/bug.jpg" alt="Bug">
+                <h2>Breaking: Bug Fix Introduces Three New Bugs, Developers Not Surprised</h2>
             </a>
         </article>
     </main>
 </body>
 </html>
+
