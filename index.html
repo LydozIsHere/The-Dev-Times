@@ -11,12 +11,16 @@
             padding: 0;
             background-color: #f0f0f0;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header {
             background-color: #007BFF;
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+            width: 100%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         header h1 {
@@ -24,7 +28,13 @@
             font-size: 2.5rem;
         }
         main {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
             padding: 2rem;
+        }
+        .content {
+            flex: 1;
         }
         .big-headline {
             background-color: #fff;
@@ -85,6 +95,15 @@
         a:hover {
             text-decoration: underline;
         }
+        .ad-banner {
+            width: 300px;
+            margin-left: 2rem;
+        }
+        .ad-banner img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -92,39 +111,46 @@
         <h1>The Dev Times</h1>
     </header>
     <main>
-        <div class="big-headline">
-            <div class="breaking">BREAKING!</div>
-            <a href="story1.html">
-                <img src="images/coffee.jpg" alt="Coffee">
-                <h2>Local Programmer Discovers That Coffee is Just Caffeine Delivery System</h2>
-                <p>A groundbreaking discovery has been made by a local programmer, realizing that coffee is merely a vehicle for caffeine. This revelation has caused quite a stir in the developer community...</p>
-            </a>
+        <div class="content">
+            <div class="big-headline">
+                <div class="breaking">BREAKING!</div>
+                <a href="story1.html">
+                    <img src="images/coffee.jpg" alt="Coffee">
+                    <h2>Local Programmer Discovers That Coffee is Just Caffeine Delivery System</h2>
+                    <p>A groundbreaking discovery has been made by a local programmer, realizing that coffee is merely a vehicle for caffeine. This revelation has caused quite a stir in the developer community...</p>
+                </a>
+            </div>
+            <div class="story-grid">
+                <article>
+                    <a href="story2.html">
+                        <img src="images/robot.jpg" alt="Robot">
+                        <h2>AI Robot Declares Itself King of the Office, Demands Tribute in USB Drives</h2>
+                    </a>
+                </article>
+                <article>
+                    <a href="story3.html">
+                        <img src="images/keyboard.jpg" alt="Keyboard">
+                        <h2>Keyboard Shortcuts to Be Officially Recognized as a Second Language</h2>
+                    </a>
+                </article>
+                <article>
+                    <a href="story4.html">
+                        <img src="images/developer.jpg" alt="Developer">
+                        <h2>Developer Spends Entire Day Setting Up 'Hello World' Project, Calls It a Success</h2>
+                    </a>
+                </article>
+                <article>
+                    <a href="story5.html">
+                        <img src="images/bug.jpg" alt="Bug">
+                        <h2>Breaking: Bug Fix Introduces Three New Bugs, Developers Not Surprised</h2>
+                    </a>
+                </article>
+            </div>
         </div>
-        <div class="story-grid">
-            <article>
-                <a href="story2.html">
-                    <img src="images/robot.jpg" alt="Robot">
-                    <h2>AI Robot Declares Itself King of the Office, Demands Tribute in USB Drives</h2>
-                </a>
-            </article>
-            <article>
-                <a href="story3.html">
-                    <img src="images/keyboard.jpg" alt="Keyboard">
-                    <h2>Keyboard Shortcuts to Be Officially Recognized as a Second Language</h2>
-                </a>
-            </article>
-            <article>
-                <a href="story4.html">
-                    <img src="images/developer.jpg" alt="Developer">
-                    <h2>Developer Spends Entire Day Setting Up 'Hello World' Project, Calls It a Success</h2>
-                </a>
-            </article>
-            <article>
-                <a href="story5.html">
-                    <img src="images/bug.jpg" alt="Bug">
-                    <h2>Breaking: Bug Fix Introduces Three New Bugs, Developers Not Surprised</h2>
-                </a>
-            </article>
+        <div class="ad-banner">
+            <a href="https://www.example.com" target="_blank">
+                <img src="images/ad.jpg" alt="Advertisement">
+            </a>
         </div>
     </main>
 </body>
